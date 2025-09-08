@@ -1,3 +1,14 @@
+sudo apt update
+sudo apt install git -y
+
+
+
+
+
+
+
+
+
 #!/bin/bash
 
 # Colors

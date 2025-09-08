@@ -21,6 +21,7 @@ while true; do
   echo -e "${YELLOW}[2]${NC} Install & Run Medusa Tunnel"
   echo -e "${YELLOW}[3]${NC} Install & Run DejTunnel"
   echo -e "${YELLOW}[4]${NC} Enable BBR"
+  echo -e "${YELLOW}[5]${NC} Exit"
   
   echo "=============================================="
   read -p "👉 Choose an option: " choice
@@ -41,6 +42,9 @@ while true; do
     4)
       wget -N --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh \
       && chmod +x bbr.sh && bash bbr.sh
+      ;;
+    5)
+      break
       ;;
     *)
       echo "❌ Invalid option!"
